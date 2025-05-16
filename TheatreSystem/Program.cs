@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 
 // Абстрактный класс Театр
-private abstract class Teater  
+private abstract class Teater // изменить опечтаку в названии класса с Teater на Theater и удалить private У абстраткного класса, заменив его на public  
 {
     public int NumberOfSeats { get; set; }
     public int NumberOfRows { get; set; }
-     
-    
+     //Добавить отсутствующее свойство HasOrchestraPit
     public double StageSize { get; set; }
 
     public Theater(int numberOfSeats, int numberOfRows, bool hasOrchestraPit, double stageSize)
